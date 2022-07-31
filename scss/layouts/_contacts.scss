@@ -1,0 +1,32 @@
+.contacts {
+}
+.contacts__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+}
+.container {
+}
+.contacts__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.9rem 0 9.8rem 0;
+    &>*:not(:last-child) {
+        margin-bottom: 1.9rem;
+    }
+}
+.contacts__col-1 {
+}
+.contacts__icon {
+    max-width: 3.5rem;
+}
+.contacts__title {
+}
+.contacts__descr {
+}
+.contacts__col-2 {
+    color: #fff;
+    background-color: var(--color-accent);
+}

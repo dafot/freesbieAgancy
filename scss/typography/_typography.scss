@@ -1,0 +1,227 @@
+
+
+
+/*===============FONTS================*/
+//@include font-face(font-family, url, weight, $font-style);
+/*===============FONTS================*/
+
+/*
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Oswald', sans-serif;
+*/
+
+body {}
+a:visited {
+    color: #fff;
+}
+.header > *,
+.menu__link {
+    color: #FFF;
+}
+
+.menu {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.19rem;
+    text-transform: uppercase;
+}
+.header__title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 7.2rem;
+    line-height: 10.7rem;
+    letter-spacing: 0.46rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+@media (max-width: 1260px) {
+    .header__title {
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+}
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+}
+.header__descr {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+.header__pages {
+    display: flex;
+    &> *:not(:last-child) {
+        margin-right: 0.9rem;
+    }
+}
+.header__pages-num {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.7rem;    
+    color: var(--color-darken);
+}
+.header__pages-num.active {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+    color: var(--color-gray);
+}
+.we-are__title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 5.3rem;
+    letter-spacing: .23rem;
+    text-transform: uppercase;
+}
+.we-are__title_thin {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 4.2rem;
+    line-height: 5.3rem;
+    letter-spacing: .26rem;
+}
+.we-are__txt {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    max-width: 28rem;
+    color: var(--color-txt);
+    position: relative;
+    &::before {
+        position:absolute;
+        top: 1rem;
+        left: -3rem;
+        content: '';
+        display: block;
+        height: 0.2rem;
+        width: 2rem;
+        background-color: var(--color-dark);
+    }
+}
+.section__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        display: inline-block;
+        width: 35px;
+        height: 3px;
+        background-color: var(--color-dark);
+    }
+}
+.our-services__card-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        display: inline-block;
+        width: 35px;
+        height: 3px;
+        background-color: var(--color-dark);
+    }
+}
+.our-services__card-descr {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.5rem;    
+    letter-spacing: 0.1rem;
+    color: #777;
+}
+.our-services__card-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: .06rem;
+    color:#777;
+    text-transform: uppercase;
+    &:visited {
+        color:#777;
+    }
+}
+
+.contacts__title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.26rem;
+    text-align: center;
+    min-width: 27rem;
+}
+.contacts__descr {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: .15rem;
+}
+
+.works__nav-link,
+.works__nav-link:visited {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 100%;   
+    letter-spacing: .08rem;
+    color: rgb(167, 167, 167);
+    text-transform: uppercase;
+    transition: .2s;
+    &:hover {
+        color: #000;
+    }
+}
+.works__item-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 4.8rem;
+    line-height: 7.1rem;
+    letter-spacing: .03rem;    
+}
+.works__itme-sub-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 100%;
+    list-style: .11rem;
+}
+.works__item-descr {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.08rem;
+    color: #C2C2C2; 
+    text-align: left;
+}
+.works__item-link,
+.works__item-link:visited {
+    color: #000;
+    text-transform: uppercase;
+}
